@@ -1,4 +1,4 @@
-type Env = {
+export type Env = {
   HISTORY: KVNamespace;
 
   // region wrangler.tomlに直接書き込まれている環境変数
@@ -14,6 +14,8 @@ type Env = {
   SENTRY_CLIENT_ID: string;
   SENTRY_CLIENT_SECRET: string;
   NOTIFICATION_WEBHOOK_URL: string;
+  SITE_USERNAME: string;
+  SITE_PASSWORD: string;
   // endregion
 };
 

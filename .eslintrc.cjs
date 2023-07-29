@@ -32,6 +32,16 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'lines-between-class-members': [
       'error',
       'always',
@@ -64,5 +74,12 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-non-null-assertion': ['error'],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };

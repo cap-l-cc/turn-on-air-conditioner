@@ -22,14 +22,12 @@ jobs:
           apiToken: ${{ secrets.CF_TOKEN }}
           command: deploy
           secrets: |
-            NODE_ENV
             SWITCHBOT_TOKEN
             SWITCHBOT_CLIENT_SECRET
             SENTRY_CLIENT_ID
             SENTRY_CLIENT_SECRET
             NOTIFICATION_WEBHOOK_URL
         env:
-          NODE_ENV: production
           SWITCHBOT_TOKEN: ${{ secrets.SWITCHBOT_TOKEN }}
           SWITCHBOT_CLIENT_SECRET: ${{ secrets.SWITCHBOT_CLIENT_SECRET }}
           SENTRY_CLIENT_ID: ${{ secrets.SENTRY_CLIENT_ID }}

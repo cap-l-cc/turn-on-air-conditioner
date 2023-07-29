@@ -10,6 +10,18 @@ kv_namespaces = [
 ]
 
 [vars]
+NODE_ENV = "production"
+METER_DEVICE_ID = "DC49091D8404"
+AIR_CONDITIONER_DEVICE_ID = "02-202306140644-28427602"
+SENTRY_DSN = "https://a806b31ea1f54f39ac1f7526d1c20e98@sentry.celesteria.net/2"
+
+[env.development]
+kv_namespaces = [
+  { binding = "HISTORY", id = "e3abe12e90ec4c88a9df7ae9042361ff", preview_id = "377c5b3ea5c34abc9767cb365ca769fe" }
+]
+
+[env.development.vars]
+NODE_ENV = "development"
 METER_DEVICE_ID = "DC49091D8404"
 AIR_CONDITIONER_DEVICE_ID = "02-202306140644-28427602"
 SENTRY_DSN = "https://a806b31ea1f54f39ac1f7526d1c20e98@sentry.celesteria.net/2"

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --env development",
     "test": "vitest run",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",

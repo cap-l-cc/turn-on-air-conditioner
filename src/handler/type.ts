@@ -1,5 +1,6 @@
 export type Env = {
   HISTORY: KVNamespace;
+  RULE: KVNamespace;
 
   // region wrangler.tomlに直接書き込まれている環境変数
   NODE_ENV: 'production' | 'development';

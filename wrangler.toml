@@ -6,7 +6,8 @@ compatibility_flags = ["nodejs_compat"]
 account_id = "fff06038a70892193e0fa1e9e270436a"
 routes = [{ pattern = "air.celesteria.net", custom_domain = true }]
 kv_namespaces = [
-  { binding = "HISTORY", id = "e3abe12e90ec4c88a9df7ae9042361ff", preview_id = "377c5b3ea5c34abc9767cb365ca769fe" }
+  { binding = "HISTORY", id = "e3abe12e90ec4c88a9df7ae9042361ff", preview_id = "377c5b3ea5c34abc9767cb365ca769fe" },
+  { binding = "RULE", id = "61ca33607ad8447298b5d5231e18d886", preview_id = "01fca3f32ec040b6a1d3c776beeff8c8" }
 ]
 
 [vars]
@@ -17,7 +18,8 @@ SENTRY_DSN = "https://a806b31ea1f54f39ac1f7526d1c20e98@sentry.celesteria.net/2"
 
 [env.development]
 kv_namespaces = [
-  { binding = "HISTORY", id = "e3abe12e90ec4c88a9df7ae9042361ff", preview_id = "377c5b3ea5c34abc9767cb365ca769fe" }
+  { binding = "HISTORY", id = "e3abe12e90ec4c88a9df7ae9042361ff", preview_id = "377c5b3ea5c34abc9767cb365ca769fe" },
+  { binding = "RULE", id = "61ca33607ad8447298b5d5231e18d886", preview_id = "01fca3f32ec040b6a1d3c776beeff8c8" }
 ]
 
 [env.development.vars]

@@ -28,7 +28,15 @@ export const formatDate = (date: Date) => format(date, 'yyyy-MM-dd');
 
 /**
  * 与えられた`Date`をUTC日時に変換する
- * @param date 日時。タイムゾーンは問わない。
- * @returns UTC日時。
+ * @param date 日時。タイムゾーンは問わない
+ * @returns UTC日時
  */
 export const getUtcDate = (date: Date) => parseISO(date.toISOString());
+
+/**
+ * 与えられた日付がその月の何週目なのかを返す
+ * @param date 日時
+ * @returns その月の何週目なのか
+ * @see https://product.skyarc.co.jp/engineerblog/entry/customizewebpagelabel.html
+ */
+export const getWhatWeekOfMonth = (date: Date) => Math.floor((date.getDate() - date.getDay() + 12) / 7);
